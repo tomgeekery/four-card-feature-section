@@ -3,3 +3,21 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* Animation */
+@keyframes fade-in-up {
+  from {
+    @apply transform translate-y-4 opacity-0;
+  }
+  to {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.5s linear;
+}
+
+.animation-delay-150 {
+  animation-delay: 1.5s;
+}
