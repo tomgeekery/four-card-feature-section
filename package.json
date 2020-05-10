@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "concurrently 'npm:browser-sync' 'npm:watch-css'",
-    "build": "npm runb build-css",
+    "build": "npm run build-css",
     "browser-sync": "browser-sync . -w",
     "watch-css": "postcss css/style.css --output dist/style.css --watch",
     "build-css": "postcss css/style.css --output dist/style.css"
