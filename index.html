@@ -1,45 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+    <title>Frontend Mentor | Four card feature section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <link rel="stylesheet" href="dist/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="container px-8 mx-auto mb-20 font-body mt-525 text-09375 text-very-dark-blue bg-concrete"
+  >
+    <section class="max-w-md mx-auto text-center mb-475 md:mb-16">
+      <h1 class="mb-4 text-2xl md:text-4xl">
+        <span class="block font-thin">Reliable, efficient delivery</span>
+        <span class="block font-semibold">Powered by Technology</span>
+      </h1>
+      <p class="leading-relaxed opacity-50">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </section>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+    <section class="md:flex md:items-center md:justify-center">
+      <div
+        class="flex flex-col mb-6 bg-white border-t-4 rounded md:w-21875 p-175 shadow-card border-cyan md:p-8 md:mb-0"
+      >
+        <h2 class="text-xl font-semibold">Supervisor</h2>
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+        <p class="mb-8 opacity-50 text-08125 md:mb-12">
+          Monitors activity to identify project roadblocks
+        </p>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+        <img
+          class="self-end"
+          src="images/icon-supervisor.svg"
+          alt="magnifying glass"
+        />
+      </div>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+      <div class="md:w-21875 md:mx-1875">
+        <div
+          class="flex flex-col mb-6 bg-white border-t-4 rounded p-175 shadow-card border-red md:p-8 md:mb-1875"
+        >
+          <h2 class="text-xl font-semibold">Team Builder</h2>
 
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+          <p class="mb-8 opacity-50 text-08125 md:mb-12">
+            Scans our talent network to create the optimal team for your project
+          </p>
+
+          <img
+            class="self-end"
+            src="images/icon-team-builder.svg"
+            alt="team builder"
+          />
+        </div>
+
+        <div
+          class="flex flex-col mb-6 bg-white border-t-4 rounded p-175 shadow-card border-orange md:p-8 md:mb-0"
+        >
+          <h2 class="text-xl font-semibold">Karma</h2>
+
+          <p class="mb-8 opacity-50 text-08125 md:mb-12">
+            Regularly evaluates our talent to ensure quality
+          </p>
+
+          <img class="self-end" src="images/icon-karma.svg" alt="light bulb" />
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col mb-6 bg-white border-t-4 rounded md:w-21875 p-175 shadow-card border-blue md:p-8 md:mb-0"
+      >
+        <h2 class="text-xl font-semibold">Calculator</h2>
+
+        <p class="mb-8 opacity-50 text-08125 md:mb-12">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+
+        <img
+          class="self-end"
+          src="images/icon-calculator.svg"
+          alt="computer monitor"
+        />
+      </div>
+    </section>
+  </body>
 </html>
